@@ -1,0 +1,235 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   HR Learning Zone — foundation
+   70 % neutral · 20 % brand · 10 % accent
+   ============================================================ */
+
+:root {
+  color-scheme: dark;
+  --safe-b: env(safe-area-inset-bottom, 0px);
+  --safe-t: env(safe-area-inset-top, 0px);
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  @apply bg-canvas text-ink antialiased;
+  font-feature-settings: "cv02", "cv03", "cv04", "ss01";
+  overscroll-behavior-y: none;
+  background-image:
+    radial-gradient(60rem 40rem at 12% -10%, rgba(109, 106, 247, 0.14), transparent 60%),
+    radial-gradient(45rem 30rem at 96% 4%, rgba(183, 242, 92, 0.07), transparent 62%),
+    radial-gradient(40rem 30rem at 50% 110%, rgba(94, 231, 240, 0.05), transparent 60%);
+  background-attachment: fixed;
+  min-height: 100dvh;
+}
+
+::selection {
+  background: rgba(138, 140, 255, 0.35);
+  color: #fff;
+}
+
+/* Scrollbars — quiet, on-brand */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.18);
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+/* ---------- focus ---------- */
+:focus-visible {
+  outline: 2px solid theme("colors.brand.400");
+  outline-offset: 2px;
+  border-radius: 10px;
+}
+
+@layer components {
+  /* ---------- 70 % neutral surfaces ---------- */
+  .card {
+    @apply rounded-3xl border border-line bg-surface/80 backdrop-blur-xl shadow-card;
+  }
+  .card-flat {
+    @apply rounded-2xl border border-line bg-surface-2/70;
+  }
+  .hairline {
+    @apply border-line;
+  }
+
+  /* ---------- 20 % brand ---------- */
+  .brand-text {
+    @apply bg-gradient-to-br from-white via-brand-200 to-brand-400 bg-clip-text text-transparent;
+  }
+  .brand-chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-brand-500/30 bg-brand-500/12 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-brand-200;
+  }
+  .nav-active {
+    @apply text-brand-200;
+  }
+
+  /* ---------- 10 % accent ---------- */
+  .btn {
+    @apply inline-flex select-none items-center justify-center gap-2 rounded-2xl px-5 py-3.5 text-[15px] font-semibold transition-all duration-200 active:scale-[0.975] disabled:pointer-events-none disabled:opacity-45;
+  }
+  .btn-primary {
+    @apply btn bg-accent-lime text-[#0A1206] shadow-accent hover:brightness-105;
+  }
+  .btn-brand {
+    @apply btn bg-brand-500 text-white shadow-glow hover:bg-brand-600;
+  }
+  .btn-ghost {
+    @apply btn border border-line bg-surface-2/60 text-ink hover:bg-surface-3;
+  }
+  .btn-quiet {
+    @apply btn px-3 py-2 text-sm text-ink-muted hover:bg-surface-2 hover:text-ink;
+  }
+  .accent-pill {
+    @apply inline-flex items-center gap-1.5 rounded-full bg-accent-lime/12 px-2.5 py-1 text-[11px] font-bold text-accent-lime;
+  }
+
+  .input {
+    @apply w-full rounded-2xl border border-line bg-surface-2/80 px-4 py-3.5 text-[15px] text-ink placeholder:text-ink-faint focus:border-brand-500/60 focus:outline-none focus:ring-2 focus:ring-brand-500/25;
+  }
+  .label {
+    @apply mb-1.5 block text-[13px] font-semibold text-ink-muted;
+  }
+
+  .section-title {
+    @apply text-[11px] font-bold uppercase tracking-[0.2em] text-ink-faint;
+  }
+  .display {
+    @apply font-semibold tracking-[-0.03em];
+  }
+
+  /* faint grid used behind hero areas */
+  .grid-veil {
+    background-image:
+      linear-gradient(to right, rgba(148, 163, 184, 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(148, 163, 184, 0.06) 1px, transparent 1px);
+    background-size: 44px 44px;
+    mask-image: radial-gradient(ellipse at 50% 0%, black 10%, transparent 72%);
+  }
+
+  .skeleton {
+    @apply relative overflow-hidden rounded-xl bg-surface-3/60;
+  }
+  .skeleton::after {
+    content: "";
+    @apply absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/5 to-transparent animate-shimmer;
+  }
+}
+
+@layer utilities {
+  .safe-bottom {
+    padding-bottom: calc(1rem + var(--safe-b));
+  }
+  .pb-nav {
+    padding-bottom: calc(6.25rem + var(--safe-b));
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .tap {
+    @apply transition-transform duration-150 active:scale-[0.97];
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+}
+
+/* ---------- lesson prose ---------- */
+.prose-lesson {
+  @apply text-[15.5px] leading-[1.75] text-ink/90;
+}
+.prose-lesson h2 {
+  @apply mt-8 mb-3 text-xl font-semibold tracking-tight text-white;
+}
+.prose-lesson h3 {
+  @apply mt-6 mb-2 text-[17px] font-semibold text-white;
+}
+.prose-lesson p {
+  @apply mb-4;
+}
+.prose-lesson ul {
+  @apply mb-4 space-y-2 pl-1;
+}
+.prose-lesson ul > li {
+  @apply relative list-none pl-5;
+}
+.prose-lesson ul > li::before {
+  content: "";
+  @apply absolute left-0 top-[0.62em] h-1.5 w-1.5 rounded-full bg-brand-400;
+}
+.prose-lesson ol > li::marker {
+  @apply font-semibold text-brand-300;
+}
+.prose-lesson strong {
+  @apply font-semibold text-white;
+}
+.prose-lesson em {
+  @apply not-italic text-accent-amber;
+}
+.prose-lesson code {
+  @apply rounded-md bg-surface-3 px-1.5 py-0.5 font-mono text-[0.86em] text-accent-cyan;
+}
+.prose-lesson .callout {
+  @apply my-5 rounded-2xl border border-brand-500/25 bg-brand-500/8 p-4 text-[14.5px] leading-relaxed;
+}
+.prose-lesson .callout-tip {
+  @apply my-5 rounded-2xl border border-accent-lime/25 bg-accent-lime/8 p-4 text-[14.5px] leading-relaxed;
+}
+.prose-lesson .formula {
+  @apply my-4 overflow-x-auto rounded-2xl border border-line bg-surface-2/80 px-4 py-3 font-mono text-[13.5px] text-accent-cyan;
+}
+.prose-lesson table {
+  @apply my-5 w-full border-collapse text-[13.5px];
+}
+.prose-lesson th {
+  @apply border-b border-line px-3 py-2 text-left font-semibold text-white;
+}
+.prose-lesson td {
+  @apply border-b border-line/60 px-3 py-2 align-top;
+}
+
+/* horizontal snap rails for mobile */
+.rail {
+  @apply flex snap-x snap-mandatory gap-3 overflow-x-auto pb-1 no-scrollbar;
+}
+.rail > * {
+  @apply shrink-0 snap-start;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6D6AF7"/>
+      <stop offset="0.55" stop-color="#4A3FB8"/>
+      <stop offset="1" stop-color="#241C5C"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="#080A0F"/>
+  <rect x="28" y="28" width="456" height="456" rx="92" fill="url(#g)"/>
+  <path d="M256 118v276M150 170l212 172M362 170 150 342" stroke="#B7F25C" stroke-width="14" stroke-linecap="round" opacity="0.55"/>
+  <text x="256" y="300" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-size="168" font-weight="800" fill="#ffffff" letter-spacing="-6">HR</text>
+</svg>
