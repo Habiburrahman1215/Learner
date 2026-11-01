@@ -2,7 +2,7 @@
   "name": "hr-learning-zone",
   "version": "1.0.0",
   "private": true,
-  "description": "HR Learning Zone — offline-first learning, practice and assessment zone for NSDA RAC Level 2 and all four GED subjects.",
+  "description": "HR Learning Zone \u2014 offline-first learning, practice and assessment zone for NSDA RAC Level 2 and all four GED subjects.",
   "author": "HR",
   "scripts": {
     "dev": "next dev -H 0.0.0.0 -p 3000",
@@ -26,5 +26,8 @@
     "postcss": "^8.4.49",
     "tailwindcss": "3.4.19",
     "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": "22.x"
   }
 }

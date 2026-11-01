@@ -206,8 +206,8 @@ export function QuestionRunner({ session, mode = "practice", onFinish, onExit, h
           />
         </div>
 
-        {/* feedback */}
-        {revealed && (
+        {/* feedback — never during an exam, or the test stops testing */}
+        {revealed && !examMode && (
           <div className="mt-4 animate-fade-up">
             {(() => {
               const last = results[results.length - 1];
