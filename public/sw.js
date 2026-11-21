@@ -5,7 +5,7 @@
    - Everything the learner studies is bundled into the JS, so a warm cache
      makes the whole library available with the radio switched off. */
 
-const VERSION = "hlz-v3";
+const VERSION = "hlz-v4";
 const SHELL = `${VERSION}-shell`;
 const RUNTIME = `${VERSION}-runtime`;
 
