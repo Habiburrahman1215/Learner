@@ -24,6 +24,7 @@ html {
 
 body {
   @apply bg-canvas text-ink antialiased;
+  overflow-x: hidden;
   font-feature-settings: "cv02", "cv03", "cv04", "ss01";
   overscroll-behavior-y: none;
   background-image:
@@ -163,19 +164,23 @@ body {
 
 /* ---------- lesson prose ---------- */
 .prose-lesson {
-  @apply text-[15.5px] leading-[1.75] text-ink/90;
+  @apply text-[17px] leading-[1.85] text-ink/95;
+  overflow-wrap: anywhere;
 }
 .prose-lesson h2 {
-  @apply mt-8 mb-3 text-xl font-semibold tracking-tight text-white;
+  @apply mt-9 mb-3 text-[21px] font-bold leading-tight tracking-tight text-white;
+  scroll-margin-top: 5rem;
 }
 .prose-lesson h3 {
-  @apply mt-6 mb-2 text-[17px] font-semibold text-white;
+  @apply mt-7 mb-2 text-[18px] font-semibold leading-snug text-white;
+  scroll-margin-top: 5rem;
 }
 .prose-lesson p {
-  @apply mb-4;
+  @apply mb-5;
+  max-width: 72ch;
 }
 .prose-lesson ul {
-  @apply mb-4 space-y-2 pl-1;
+  @apply mb-5 space-y-2 pl-1;
 }
 .prose-lesson ul > li {
   @apply relative list-none pl-5;
@@ -206,7 +211,15 @@ body {
   @apply my-4 overflow-x-auto rounded-2xl border border-line bg-surface-2/80 px-4 py-3 font-mono text-[13.5px] text-accent-cyan;
 }
 .prose-lesson table {
-  @apply my-5 w-full border-collapse text-[13.5px];
+  @apply my-5 w-full border-collapse text-[14px];
+  min-width: 34rem;
+}
+.prose-lesson th,
+.prose-lesson td {
+  overflow-wrap: anywhere;
+}
+.prose-lesson :is(p, li, td, th) {
+  word-break: normal;
 }
 .prose-lesson th {
   @apply border-b border-line px-3 py-2 text-left font-semibold text-white;

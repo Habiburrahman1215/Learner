@@ -13,6 +13,50 @@ const numberQuantity: Module = {
     lesson(
       S,
       "gm-number",
+      "gm-l0-number-foundations",
+      "Number sense: place value, operations and estimation",
+      13,
+      ["gm-number"],
+      `
+## Numbers are quantities with structure
+The digits 4, 2 and 7 do not mean the same thing in 427: place value gives 4 hundreds, 2 tens and 7 ones. In a decimal, each place to the right is one tenth of the place before it. Read 5.036 as five and thirty-six thousandths—not five point thirty-six.
+
+## The four operations
+- **Addition** combines quantities. Check with subtraction.
+- **Subtraction** finds a difference or missing amount. Check by adding the result to the number subtracted.
+- **Multiplication** can mean equal groups or scaling. Check by estimating or dividing.
+- **Division** shares into equal groups or asks how many groups fit. Division by zero is undefined.
+
+A remainder can be written as a fraction or decimal when the context allows. In a question asking for a whole number of buses, people or crates, interpret the remainder in the real situation rather than rounding automatically.
+
+## Positive and negative numbers
+On a number line, values increase to the right. Thus −2 is greater than −7: it lies closer to zero. The absolute value |−7| = 7 is distance from zero, not a sign.
+
+When adding signed numbers, equal signs combine their magnitudes; different signs subtract magnitudes and keep the sign of the number farther from zero. For multiplication and division: same signs give a positive result; different signs give a negative result.
+
+## Decimals and money
+Line decimal points up before adding or subtracting. For multiplication, multiply as whole numbers, then place the decimal using the total number of decimal places in the factors. For division by a decimal, shift the decimal in both numbers the same number of places until the divisor is a whole number.
+
+! 3.6 ÷ 0.12 | Move both decimal points two places: 360 ÷ 12 | ⇒ 30
+
+## Order of operations
+Use parentheses first, then exponents, then multiplication/division from left to right, then addition/subtraction from left to right. Multiplication does not always come before division; they share a level.
+
+! 18 − 12 ÷ 3 × 2 | Divide and multiply left to right: 18 − 4 × 2 = 18 − 8 | ⇒ 10
+
+## Estimate before you calculate
+Round 49 × 21 to about 50 × 20 = 1,000. If the exact answer is 102.9 or 10,290, the estimate exposes a misplaced decimal. Estimation also helps eliminate implausible multiple-choice answers quickly.
+
+## Units tell you what operation makes sense
+Write the unit beside each number. If a 3-hour trip covers 180 km, then 180 km ÷ 3 h = 60 km/h. Units cancel in a calculation just as factors do; they are a built-in error check.
+
+> **Start here if arithmetic feels shaky:** practise place value and signed numbers before moving on to fractions. You can return to this lesson whenever a later topic feels harder than it should.
+`,
+      { subtitle: "The number skills every later GED Math topic depends on" },
+    ),
+    lesson(
+      S,
+      "gm-number",
       "gm-l1-fractions",
       "Fractions, decimals and percents",
       12,

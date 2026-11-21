@@ -127,14 +127,21 @@ export default function DashboardPage() {
         </div>
       </section>
 
-      {/* quick actions */}
+      {/* learning-first paths, with practice and assessment alongside */}
       <section className="grid grid-cols-2 gap-2">
+        <Link href="/learn" className="card tap group p-4">
+          <span className="grid h-10 w-10 place-items-center rounded-xl bg-brand-500/12 text-brand-300">
+            <Icon name="book" className="h-5 w-5" />
+          </span>
+          <h3 className="mt-2.5 text-[14px] font-semibold">Learning library</h3>
+          <p className="text-[12px] leading-relaxed text-ink-muted">Start at the foundations and follow the lessons</p>
+        </Link>
         <Link href="/practice" className="card tap group p-4">
           <span className="grid h-10 w-10 place-items-center rounded-xl bg-accent-lime/12 text-accent-lime">
             <Icon name="target" className="h-5 w-5" />
           </span>
           <h3 className="mt-2.5 text-[14px] font-semibold">Practice</h3>
-          <p className="text-[11.5px] leading-snug text-ink-muted">Adaptive sets, any format, any count</p>
+          <p className="text-[12px] leading-relaxed text-ink-muted">Try adaptive questions after a lesson</p>
         </Link>
         <Link href="/review" className="card tap group p-4">
           <div className="flex items-start justify-between">
@@ -144,21 +151,14 @@ export default function DashboardPage() {
             {due > 0 && <span className="accent-pill">{due}</span>}
           </div>
           <h3 className="mt-2.5 text-[14px] font-semibold">Review</h3>
-          <p className="text-[11.5px] leading-snug text-ink-muted">{due > 0 ? `${due} cards due now` : "Nothing due — come back later"}</p>
+          <p className="text-[12px] leading-relaxed text-ink-muted">{due > 0 ? `${due} cards due now` : "Revisit lessons and past answers"}</p>
         </Link>
         <Link href="/exam" className="card tap p-4">
           <span className="grid h-10 w-10 place-items-center rounded-xl bg-accent-amber/12 text-accent-amber">
             <Icon name="trophy" className="h-5 w-5" />
           </span>
-          <h3 className="mt-2.5 text-[14px] font-semibold">Mock exam</h3>
-          <p className="text-[11.5px] leading-snug text-ink-muted">Five full simulations</p>
-        </Link>
-        <Link href="/progress" className="card tap p-4">
-          <span className="grid h-10 w-10 place-items-center rounded-xl bg-accent-cyan/12 text-accent-cyan">
-            <Icon name="chartBar" className="h-5 w-5" />
-          </span>
-          <h3 className="mt-2.5 text-[14px] font-semibold">Progress</h3>
-          <p className="text-[11.5px] leading-snug text-ink-muted">Mastery, history, exam scores</p>
+          <h3 className="mt-2.5 text-[14px] font-semibold">Mock exams</h3>
+          <p className="text-[12px] leading-relaxed text-ink-muted">Five full subject simulations</p>
         </Link>
       </section>
 

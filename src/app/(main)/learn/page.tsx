@@ -18,8 +18,8 @@ export default function LearnPage() {
     <div className="space-y-5">
       <header>
         <h1 className="text-[24px] font-black tracking-tighter">Learn</h1>
-        <p className="mt-1 text-[13px] text-ink-muted">
-          {totalLessons} lessons across five subjects. Every word is stored on your device.
+        <p className="mt-1 max-w-prose text-[14px] leading-relaxed text-ink-muted">
+          A learn-first curriculum for beginners: study a lesson, build understanding, then practise and test yourself. {totalLessons} lessons are included for offline reading.
         </p>
       </header>
 
@@ -72,25 +72,14 @@ export default function LearnPage() {
                 </div>
               </div>
 
-              <div className="divide-y divide-line border-t border-line">
-                {s.modules.slice(0, 3).map((m) => (
-                  <Link
-                    key={m.id}
-                    href={`/lesson/${m.lessons[0].id}`}
-                    className="flex items-center gap-2.5 px-4 py-2.5 text-[12.5px] hover:bg-surface-2/40"
-                  >
-                    <Icon name={m.icon} className="h-3.5 w-3.5 shrink-0 text-ink-faint" />
-                    <span className="flex-1 truncate">{m.title}</span>
-                    <span className="shrink-0 text-[10.5px] text-ink-faint">{m.lessons.length} lesson{m.lessons.length > 1 ? "s" : ""}</span>
-                    <Icon name="chevron" className="h-3.5 w-3.5 shrink-0 text-ink-faint" />
-                  </Link>
-                ))}
-                {s.modules.length > 3 && (
-                  <Link href={`/learn/${s.id}`} className="block px-4 py-2.5 text-center text-[12px] font-semibold text-brand-300">
-                    + {s.modules.length - 3} more modules
-                  </Link>
-                )}
-              </div>
+              <Link href={`/learn/${s.id}`} className="flex min-h-14 items-center justify-between gap-3 border-t border-line px-4 py-3.5 text-[14px] font-semibold text-brand-200 hover:bg-surface-2/40">
+                <span className="flex min-w-0 items-center gap-2.5">
+                  <Icon name="book" className="h-4 w-4 shrink-0" />
+                  <span>Open full curriculum</span>
+                </span>
+                <span className="shrink-0 text-[12px] font-medium text-ink-muted">{s.modules.length} units · {s.modules.reduce((a, m) => a + m.lessons.length, 0)} lessons</span>
+                <Icon name="chevron" className="h-4 w-4 shrink-0" />
+              </Link>
             </section>
           );
         })}

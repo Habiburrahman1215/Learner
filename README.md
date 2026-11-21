@@ -13,7 +13,7 @@ Designed & developed by **HR**. Next.js 15 (App Router) · React 19 · Tailwind 
 
 | Area | Detail |
 | --- | --- |
-| **Library** | 5 subjects, 17 modules, 60+ lessons written from the competency standards and GED content domains |
+| **Learning zone** | 5 subjects, 31 modules and 67 sequenced lessons; readable offline, with adjustable text, reading progress, lesson completion and direct practice links |
 | **Item bank** | 348 hand-written items across all 8 response formats (MCQ, multi-select, true/false, numeric, short answer, match, order) + 38 parametric generators that compute their own answers |
 | **Practice** | Choose subject → topics → formats → count → difficulty. Adaptive, weakest-topic or random selection; interleaved by design |
 | **Mock exams** | 5 blueprints weighted like the real tests (RAC theory, GED Math/RLA/Science/Social), plus custom exams |
@@ -22,12 +22,13 @@ Designed & developed by **HR**. Next.js 15 (App Router) · React 19 · Tailwind 
 | **Offline** | Service worker precaches the shell and every asset; all content is compiled into the bundle; state is local-first |
 | **Account** | Supabase email/password auth, profile, leaderboard, and progress sync (local wins, remote adopts when newer) |
 
-### The 70-20-10 rule
+### The 70-20-10 design rule
 
-Applied twice, deliberately:
+- **70 %** calm neutral canvas and readable content surfaces.
+- **20 %** brand colour and typographic hierarchy to orient the learner.
+- **10 %** accent colour for meaningful actions, progress and feedback.
 
-- **Pedagogy** — 70 % doing (practice, mocks, review, quests), 20 % feedback (explanations, result diagnostics, hints), 10 % instruction (lessons, glossary, formula sheet, standards).
-- **Interface** — ~70 % neutral surface, 20 % structural line/type hierarchy, 10 % accent colour. Lime is reserved for the single next action.
+Learning is not gated behind practice: courses are organised as readable, sequenced lessons first. Practice, review and mock assessments support each lesson and can also be used independently.
 
 ---
 

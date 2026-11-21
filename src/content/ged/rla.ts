@@ -194,6 +194,105 @@ Answer questions about the *relationship* between the texts, not about each text
 `,
       { subtitle: "Theme, character, devices, tone, paired texts", drill: ["gr-002"] },
     ),
+    lesson(
+      S,
+      "gr-info",
+      "gr-l1-arguments",
+      "Claims, evidence and reasoning in informational texts",
+      14,
+      ["gr-info"],
+      `
+## Separate the parts of an argument
+An argument is not just a strong opinion. It is a **claim** supported by **evidence** and connected by **reasoning**.
+
+| Part | Question to ask | Example |
+| --- | --- | --- |
+| Claim | What does the writer want me to accept? | Schools should begin later. |
+| Evidence | What verifiable support is offered? | A district study reports fewer first-period absences. |
+| Reasoning | Why does that evidence support this claim? | Better-rested students are more likely to attend and participate. |
+| Assumption | What must be true for the reasoning to work? | The study's students are comparable to the students in question. |
+
+A quotation or statistic is not automatically good evidence. Check whether it is **relevant**, **specific**, and **representative**. A statistic about one school may not prove what happens in every school. A dramatic anecdote can illustrate a problem but cannot establish how common it is.
+
+## Fact, inference and opinion
+- A **fact** can be checked against reliable evidence: "The survey included 800 adults."
+- An **inference** is a conclusion drawn from evidence: "The larger group may be more representative."
+- An **opinion** is a judgment or preference: "The policy is fair."
+
+A sentence may contain more than one. The GED asks which conclusion is *best supported*, not which one sounds reasonable.
+
+## Test an author's reasoning
+Use this four-step check:
+1. State the claim in your own words.
+2. Point to the strongest evidence, not the most vivid sentence.
+3. Explain the link between evidence and claim.
+4. Look for a missing comparison, an exception, or a cause the author has not ruled out.
+
+**Correlation is not proof of cause.** If neighbourhoods with more trees have lower temperatures, trees may help, but income, building density, or distance from the coast could also differ. A sound text acknowledges limits; a weak one treats a relationship as proof of a single cause.
+
+## Sources and credibility
+Evaluate the source, not just its confident tone. Ask who created it, when, for what audience, and with what evidence. A government report can be useful for official counts; a first-person account can be useful for experience. Neither is automatically best for every question. For current claims, a date matters. For historical claims, proximity to an event may matter, but so can the author's position and purpose.
+
+## GED elimination routine
+Remove choices that contradict the passage, import outside facts, overstate a cautious claim, or support only one detail while ignoring the whole argument. Then compare the remaining choices against the exact question: *main idea, evidence, inference, purpose,* or *effect*. These are different tasks.
+
+! A passage says a small trial found improved sleep in 18 of 25 participants and calls for a larger study | Supported: the result is promising but preliminary | Not supported: the treatment works for everyone | ⇒ preserve the author's level of certainty
+
+> **Check yourself:** Can you name the claim, quote one relevant piece of evidence, and explain the link without repeating the evidence? If not, reread the reasoning rather than memorising a sentence.
+`,
+      { subtitle: "Identify claims and judge evidence without overstating conclusions" },
+    ),
+    lesson(
+      S,
+      "gr-info",
+      "gr-l1-paired-texts",
+      "Compare paired texts and competing viewpoints",
+      12,
+      ["gr-info", "gr-lit"],
+      `
+## Read each text on its own first
+When two passages address one issue, do not blend them too early. For each passage, write a one-line note:
+- the author's central claim or theme;
+- the author's purpose and audience;
+- the strongest evidence or story detail;
+- the tone (supportive, sceptical, urgent, reflective, qualified).
+
+Only then compare. This prevents the common mistake of assigning one author's view to the other.
+
+## Four common relationships
+1. **Agreement:** both reach a similar conclusion, perhaps for different reasons.
+2. **Disagreement:** they make incompatible claims or interpret evidence differently.
+3. **Qualification:** one accepts part of the other's claim but adds limits or conditions.
+4. **Different focus:** they address separate aspects and may not truly contradict each other.
+
+A passage that says "the evidence is promising but incomplete" does not reject the evidence; it limits what can be concluded from it.
+
+## Compare evidence, not just conclusions
+One writer may use a personal account; another may use a survey. Ask what each kind of evidence can and cannot show. A narrative can reveal how an event felt to one person, but not how often it occurs. A poll can estimate a pattern if sampled fairly, but may not explain why it occurs. Expert testimony can explain a mechanism, but still needs support and context.
+
+| Comparison | Ask |
+| --- | --- |
+| Claim | What does each author want the reader to believe? |
+| Evidence | Which examples, data or observations support it? |
+| Reasoning | Does the evidence actually connect to the conclusion? |
+| Purpose | Is the author explaining, persuading, reporting or reflecting? |
+| Tone | Is the language certain, cautious, critical or hopeful? |
+
+## Handle questions precisely
+- "How do the authors differ?" Identify a real difference in claim, evidence, purpose or tone.
+- "Which statement would both support?" Find shared ground, not a detail from only one text.
+- "How would the second author respond?" Use the second author's stated reasoning; do not invent a reaction.
+- "Which passage is more convincing?" Compare the quality and relevance of evidence, not your personal agreement.
+
+! Text A says a city tree programme lowers summer temperatures; Text B agrees trees cool streets but warns that the study covered only two districts | They agree on a possible benefit; B qualifies how widely it can be generalised | ⇒ qualification is not total disagreement
+
+## A quick comparison chart
+Draw two columns and put one claim plus two evidence notes under each. Circle shared points and underline the exact disagreement. On a timed test, this 30-second map is faster than rereading both passages for every question.
+
+> **Check yourself:** If you describe a text as "for" or "against," can you point to the exact sentence that establishes that position? Use the author's words as evidence.
+`,
+      { subtitle: "Keep viewpoints separate, then compare claim, support and tone" },
+    ),
   ],
 };
 
@@ -280,6 +379,60 @@ Proper nouns, the start of sentences, titles before names, days, months, languag
 >> In the exam, read the whole sentence before choosing. Three of the four options often fix a problem you were not looking for — and the fourth creates one.
 `,
       { subtitle: "Agreement, pronouns, modifiers, parallelism, punctuation", drill: ["gr-003"] },
+    ),
+    lesson(
+      S,
+      "gr-lang",
+      "gr-l2-revision",
+      "Revise for clarity, order and precise meaning",
+      12,
+      ["gr-lang", "gr-writing"],
+      `
+## Editing is a sequence, not guesswork
+When two versions seem grammatical, choose the one that best preserves the writer's meaning, fits the surrounding paragraph, and communicates clearly. Use this order:
+1. **Meaning:** does the sentence say what the writer intends?
+2. **Organisation:** does each sentence belong here, and does the paragraph move logically?
+3. **Sentence structure:** is it complete, concise and parallel?
+4. **Conventions:** agreement, tense, punctuation, spelling and capitalisation.
+
+Do not repair a tiny comma while missing that the paragraph is out of order.
+
+## Cohesion and transitions
+A transition names the relationship between ideas. Choose it for its logic, not because it sounds formal.
+
+| Relationship | Useful transitions |
+| --- | --- |
+| Addition | furthermore, also, in addition |
+| Contrast | however, although, in contrast |
+| Cause/result | therefore, as a result, because |
+| Example | for instance, specifically |
+| Concession | admittedly, even though |
+| Sequence | first, later, finally |
+
+A transition cannot fix a false relationship. "Therefore" promises a result; use it only when the second idea follows from the first.
+
+## Combine sentences without losing meaning
+Short sentences can be combined to show a clear relationship. Avoid creating a sentence so long that its main point disappears.
+
+! The sensor was dirty. The reading was inaccurate. We cleaned the sensor. The reading stabilised. | "Because the dirty sensor produced an inaccurate reading, we cleaned it; afterward, the reading stabilised." | ⇒ cause, action and result are now explicit
+
+When combining, retain every essential fact, use the correct subject for each verb, and avoid a dangling opening phrase.
+
+## Concision and word choice
+Remove repeated ideas, empty openings and words that do no work. "Due to the fact that" can usually become "because." But concise does not mean choppy: retain details needed for accuracy and tone. Prefer a specific verb over several vague words.
+
+## Paragraph structure
+A focused paragraph usually has one controlling idea, supporting detail, and an explanation of why the detail matters. A sentence that introduces a new topic belongs in a new paragraph or a different place in the essay. Read the first sentence of each paragraph in sequence; they should form a sensible outline.
+
+## Tone and audience
+A report to a supervisor, a personal narrative and a public argument need different levels of formality. On the GED, the best revision is normally clear, standard written English—not unnecessarily complicated vocabulary. Avoid slang in formal writing and avoid stiff language in a personal narrative.
+
+## Test strategy
+Read the prompt before editing. If asked to improve a sentence, check the whole paragraph so the answer fits its context. If asked to combine sentences, preserve all key facts. If asked where a sentence belongs, look for repeated nouns, pronouns with clear referents, and transitions that connect ideas.
+
+> **Check yourself:** Read your revised sentence aloud. Can you identify its subject, main verb, and the relationship between each clause? If not, simplify it.
+`,
+      { subtitle: "Edit in order: meaning, organisation, sentence craft, conventions" },
     ),
   ],
 };

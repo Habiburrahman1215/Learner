@@ -132,6 +132,44 @@ Counties, municipalities, school districts, special districts. Most direct conta
 `,
       { subtitle: "Electoral College, amendments, participation, media literacy", drill: ["gss-002"] },
     ),
+    lesson(
+      S,
+      "gss-civics",
+      "gss-l1-rights",
+      "Civil liberties, civil rights and equal protection",
+      12,
+      ["gss-civics"],
+      `
+## Two ideas that sound alike but answer different questions
+**Civil liberties** protect people from improper government interference: freedom of speech, religious exercise, due process and protection from unreasonable searches. **Civil rights** concern equal treatment and protection from discrimination. The ideas overlap, but they are not interchangeable.
+
+A question about whether officials may punish peaceful criticism is about a liberty. A question about whether a public school may exclude a group is about equality and civil rights.
+
+## The Constitution as a framework
+The First Amendment protects speech, religion, press, assembly and petition. Rights are broad but not unlimited: for example, the government may impose content-neutral time, place and manner rules when they are narrowly designed and leave other ways to communicate. The Fourth Amendment protects against unreasonable searches; the Fifth and Fourteenth Amendments include due-process protections. The Fourteenth Amendment also guarantees equal protection.
+
+## How rights became enforceable
+The Bill of Rights originally constrained the federal government. Through the Fourteenth Amendment and Supreme Court decisions, most of those protections were applied to state governments over time. The GED may give a short case excerpt and ask what principle it illustrates—not require memorising every legal test.
+
+| Case | Broad principle |
+| --- | --- |
+| *Brown v. Board* (1954) | State-mandated school segregation violates equal protection |
+| *Gideon v. Wainwright* (1963) | Indigent defendants have a right to counsel in serious criminal cases |
+| *Tinker v. Des Moines* (1969) | Students retain speech rights at school, subject to limits for substantial disruption |
+| *Miranda v. Arizona* (1966) | People in custodial interrogation must be informed of key rights |
+
+## Read a legal or historical excerpt
+Find the government action, the affected person or group, the right or principle, and the court's reasoning. Distinguish the **holding** (the decision) from the reasoning that supports it. A case may protect a right in one setting without making that right unlimited in every setting.
+
+## Evidence and counterclaims
+A strong civic argument identifies a constitutional principle and applies it to specific facts. It does not assume that citing a right settles every dispute. Ask what the rule is, what facts matter, and how the source supports its conclusion.
+
+! A school limits all leafleting to a designated area during class changes but allows distribution after school | The question is whether the rule is content-neutral and leaves a meaningful channel for speech | ⇒ do not jump from “speech is protected” to “every restriction is unconstitutional”
+
+> **Check yourself:** Explain civil liberty versus civil right in one sentence each, then identify which idea fits a scenario about unequal access to a public service.
+`,
+      { subtitle: "Distinguish freedoms from equality protections and read cases carefully" },
+    ),
   ],
 };
 
@@ -184,6 +222,46 @@ Almost always through **documents and data**, not dates. You will be given a spe
 >> Dates help you place a document; they are almost never the answer by themselves.
 `,
       { subtitle: "Seven eras, the documents, and how documents are tested", drill: ["gss-003"] },
+    ),
+    lesson(
+      S,
+      "gss-history",
+      "gss-l2-historical-thinking",
+      "Think like a historian: sources, context and cause",
+      13,
+      ["gss-history"],
+      `
+## Primary and secondary sources
+A **primary source** was created during the time being studied or by someone directly involved: a letter, law, photograph, speech, diary, map or census table. A **secondary source** later interprets primary evidence: a textbook chapter or historian's essay. “Primary” does not mean unbiased or automatically accurate; it means close to the event in a particular way.
+
+| Source question | What to inspect |
+| --- | --- |
+| Who created it? | Position, experience, authority and possible interests |
+| When? | What was happening then? Was it written during or after the event? |
+| For whom? | Private letter, public speech, official record or later audience? |
+| Why? | Inform, persuade, justify, record, protest or remember? |
+| What is missing? | Whose perspective is absent? What cannot this source establish? |
+
+## Perspective is not the same as falsehood
+A soldier's letter may reliably describe fear and confusion but not represent every soldier. A government poster reveals what officials wanted people to believe, not necessarily what everyone believed. Compare sources and look for independent corroboration before making a broad claim.
+
+## Cause and effect
+Historical events usually have **multiple causes**. Separate long-term conditions from immediate triggers, and distinguish causes from consequences. A timeline helps, but sequence alone does not prove causation.
+
+! A recession follows a bank failure | The failure may have contributed, but check earlier economic conditions, policy decisions and other events | ⇒ “after” is not enough to prove “because of”
+
+## Continuity and change
+Ask what changed, what remained, who experienced the change, and over what time. The end of a law does not automatically end the social or economic practice it supported. For example, legal emancipation and later constitutional amendments transformed rights, while discriminatory systems and unequal access persisted in new forms.
+
+## Reading historical data
+Check the date range, units, population and scale before interpreting a chart. A total may rise because population grew; a per-person rate can tell a different story. A chart beginning at a nonzero baseline may visually magnify a small change.
+
+## Build a defensible conclusion
+Use the source, place it in context, then make the narrowest conclusion the evidence supports. If two sources disagree, identify whether they differ in facts, perspective, purpose or the group they represent. Do not treat a single quotation as a complete account of an era.
+
+> **Check yourself:** A campaign speech praises a new law. What can it show about the speaker's goals? What additional source would you need to know whether the law changed people's lives?
+`,
+      { subtitle: "Primary and secondary evidence, chronology, cause and perspective" },
     ),
   ],
 };
@@ -254,6 +332,53 @@ Interest, compounding, credit, insurance and budgeting all reduce to the same co
 `,
       { subtitle: "Opportunity cost, equilibrium, GDP, inflation, policy", drill: ["gss-004"] },
     ),
+    lesson(
+      S,
+      "gss-econ",
+      "gss-l3-personal-finance",
+      "Personal finance: budgets, credit, interest and taxes",
+      13,
+      ["gss-econ"],
+      `
+## A budget is a plan for trade-offs
+Income is money received; expenses are money spent. **Fixed costs** are relatively stable (rent, loan payment), while **variable costs** change (food, transport, utilities). Savings and debt payments should be planned, not treated as whatever remains by accident.
+
+A simple monthly budget balances:
+$ \\text{income} = \\text{expenses} + \\text{savings} + \\text{debt payments}
+
+If expenses exceed income, a person must reduce costs, increase income, use savings, or borrow. Borrowing solves a timing problem but creates future obligations and a cost.
+
+## Simple and compound interest
+Simple interest is calculated on the original principal:
+$ I = Prt
+
+where P is principal, r is the annual rate as a decimal, and t is time in years. For $500 at 6% for 2 years, simple interest is 500 × 0.06 × 2 = $60.
+
+Compound interest adds earned interest to the balance, so later interest is earned on a larger amount:
+$ A = P(1 + r/n)^{nt}
+
+At the same positive rate and time, compounding more often increases the final amount. The same mechanism helps savings grow and makes unpaid debt grow faster.
+
+## Credit and the cost of borrowing
+A loan's **principal** is the amount borrowed. The **APR** expresses yearly borrowing cost, including interest and certain fees. Compare total repayment, fees, rate type and term—not only the monthly payment. A longer term can reduce each payment while increasing total interest.
+
+Credit reports describe borrowing and repayment history; a credit score summarises information using a scoring model. Paying on time and keeping balances manageable generally help, but no single action guarantees a particular score.
+
+## Inflation and purchasing power
+Inflation is a continuing rise in the general price level. If prices rise 5% while income rises 2%, real purchasing power falls approximately 3% over that period. A price increase in one product alone is not enough to establish economy-wide inflation.
+
+## Taxes and public goods
+Governments collect taxes to fund services and public goods. A **progressive** income-tax structure takes a larger share from higher incomes; a **proportional** tax uses the same rate; a **regressive** tax takes a larger share of income from lower-income households. Tax incidence asks who bears the cost in practice, which may differ from who legally sends the payment.
+
+## Compare choices with evidence
+When a question offers two loans or budgets, calculate the amount being compared and keep units consistent. Distinguish interest rate from total interest, percentage from percentage points, and monthly cost from lifetime cost.
+
+! A $1,000 balance has a 12% annual simple interest rate for one year | Interest is $120, not $12 per month compounded | ⇒ identify the stated rate period and method before calculating
+
+> **Check yourself:** If two loans have the same principal and APR but one lasts longer, which usually has the lower monthly payment—and which usually costs more in total interest?
+`,
+      { subtitle: "Budgeting, compounding, credit, inflation and tax structures" },
+    ),
   ],
 };
 
@@ -317,6 +442,50 @@ Trade, investment, information and people cross borders faster than ever. Benefi
 Ask: what is the **unit**? Is it per capita or absolute? Is the projection distorting area? Which year? Does the colour scale start at zero? A map of "total GDP" makes large countries look rich; "GDP per capita" tells a different and often more useful story.
 `,
       { subtitle: "Latitude, scale, regions, population, human impact", drill: ["gss-005"] },
+    ),
+    lesson(
+      S,
+      "gss-geo",
+      "gss-l4-population-maps",
+      "Population maps, migration and demographic change",
+      12,
+      ["gss-geo"],
+      `
+## Read the map before the pattern
+Before interpreting a choropleth (a map shaded by region), read the title, legend, units, dates and source. A map of **total population** answers a different question from **population density** or **population growth rate**. Large areas can dominate a total even when few people live there.
+
+Ask whether the colour intervals are equal. A map with categories 0–10, 10–20, 20–100 can make regions look more comparable than they are. Check whether the scale starts at zero and whether a map uses absolute numbers or percentages.
+
+## Population distribution and density
+Population is rarely spread evenly. People tend to cluster around water, fertile land, jobs, transport routes and services, while climate, terrain, hazards and conflict can discourage settlement.
+
+$ \\text{population density} = \\frac{\\text{number of people}}{\\text{land area}}
+
+A country can have a large population and low average density if it has a large area. A national average can also hide dense cities and sparsely populated regions.
+
+## Migration: causes and effects
+Migration is movement from one place to another. **Push factors** encourage departure (war, persecution, disaster, lack of work); **pull factors** attract people (safety, family, education, jobs). Many moves involve several factors and constraints, not one simple cause.
+
+Migration can change both origin and destination: labour supply, age structure, language, housing demand, remittances and local services. Avoid assuming every migrant has the same experience or motive.
+
+## Demographic transition
+The demographic transition model describes broad patterns as societies industrialise:
+- early stages: high birth and death rates, slow population growth;
+- death rates fall as sanitation, food and medicine improve;
+- birth rates later fall, so growth slows;
+- in some highly industrialised places, low birth rates and longer lives produce an ageing population.
+
+This is a model, not a prediction that every country follows an identical path. Read the data given in the question rather than forcing a country into a stage based on a stereotype.
+
+## Population pyramids
+A wide base usually indicates many children and higher recent birth rates. A narrow base and wider older bands can indicate lower birth rates and ageing. A sudden notch may reflect war, migration, disease or a change in birth rates; a pyramid alone cannot tell you which cause is responsible.
+
+## Connect geography with evidence
+When comparing regions, ask what is measured, for which years, and whether the comparison is fair. Use rates per person or per area when totals would mislead. A map can reveal a pattern; it cannot, by itself, explain the cause.
+
+> **Check yourself:** A map shows more road deaths in a large state than a small state. What additional measure—such as deaths per resident or per kilometre driven—would make the comparison more meaningful?
+`,
+      { subtitle: "Read map scales and connect population patterns to evidence" },
     ),
   ],
 };

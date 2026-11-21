@@ -141,14 +141,14 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         <div className="mx-auto flex max-w-lg items-stretch justify-around px-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] pt-1.5">
           {NAV.map((n) => {
             const active = isActive(n.href);
-            const center = n.href === "/practice";
+            const center = n.href === "/learn";
             if (center) {
               return (
                 <Link key={n.href} href={n.href} className="-mt-5 flex flex-col items-center" aria-label={n.label}>
                   <span className="grid h-14 w-14 place-items-center rounded-2xl bg-accent-lime text-[#0A1206] shadow-accent">
-                    <Icon name="target" className="h-6 w-6" strokeWidth={2} />
+                    <Icon name="book" className="h-6 w-6" strokeWidth={2} />
                   </span>
-                  <span className="mt-0.5 text-[10px] font-semibold text-ink-muted">Practice</span>
+                  <span className="mt-0.5 text-[10px] font-semibold text-ink-muted">Learn</span>
                 </Link>
               );
             }

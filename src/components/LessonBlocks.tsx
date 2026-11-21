@@ -3,13 +3,13 @@
 import type { Block } from "@/content/types";
 import { Inline } from "./ui";
 
-export function LessonBlocks({ blocks }: { blocks: Block[] }) {
+export function LessonBlocks({ blocks, fontSize = 17 }: { blocks: Block[]; fontSize?: number }) {
   return (
-    <div className="prose-lesson">
+    <div className="prose-lesson" style={{ fontSize }}>
       {blocks.map((b, i) => {
         switch (b.k) {
           case "h":
-            return <h2 key={i}>{b.t}</h2>;
+            return <h2 key={i} id={`lesson-section-${i}`}>{b.t}</h2>;
           case "h3":
             return <h3 key={i}>{b.t}</h3>;
           case "p":

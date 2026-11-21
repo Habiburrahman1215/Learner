@@ -17,6 +17,12 @@ export async function GET() {
   for (const it of staticItems) seen.set(it.id, (seen.get(it.id) ?? 0) + 1);
   const dupes = [...seen.entries()].filter(([, n]) => n > 1);
   out.info.totalItems = staticItems.length;
+  out.info.curriculum = {
+    subjects: subjects.length,
+    modules: subjects.reduce((n, s) => n + s.modules.length, 0),
+    lessons: allLessons.length,
+    bySubject: subjects.map((s) => ({ id: s.id, modules: s.modules.length, lessons: s.modules.reduce((n, m) => n + m.lessons.length, 0) })),
+  };
   out.info.duplicateIds = dupes.map(([id, n]) => `${id}×${n}`);
 
   // 2. topics resolve
